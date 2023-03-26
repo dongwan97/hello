@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            margin: auto;
+            background-color: white;
+        }
+
+
+        #head {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100px;
+            text-align: center;
+            font-size: 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 1px solid black;
+
+            background-image: url("images/배경.jpg");
+            font-family: 'Noto Sans KR', sans-serif;
+
+
+        }
+
+        #page {
+            width: 1200px;
+            margin: auto;
+            background-image: url("images/종이질감.jpg");
+            margin-top: 150px;
+            margin-bottom: 50px;
+            padding: 50px 30px;
+
+        }
+
+        #content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 860px;
+        }
+
+        .main_1 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .space {
+            width: 15px;
+        }
+
+        .image {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .reason {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            width: 350px;
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+
+        .main_2 {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            border: 2px solid black;
+            box-shadow: 4px 4px 5px gray;
+            padding: 15px 30px;
+            width: 350px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .main_2 li {
+            list-style: circle;
+        }
+
+
+        .main_3 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 15px;
+        }
+
+        .main_3 img {
+            width: 270px;
+        }
+
+        .main_3 li {
+            width: 270px;
+            list-style-type: none;
+        }
+
+        .orders {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .order_1,
+        .order_2,
+        .order_3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .floating {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 300px;
+            padding: 10px;
+            gap: 15px;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        .floating img {
+            width: 200px;
+        }
+
+        .floating li {
+            list-style: none;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            background-color: #333;
+            color: #eee;
+            width: 100vw;
+            font-size: 1.2em;
+
+        }
+
+        .button{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin:auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="head_root">
+        <div id="head">
+            <h2>오늘의 레시피</h2>
+            <h4>알리오 올리오</h4>
+        </div>
+    </div>
+
+    <div id="page">
+        <div id="content">
+            <div class="main">
+                <div class="main_1">
+                    <img src="images/알리오올리오_썸네일1.png" class="image">
+                    <div class="reason">
+                        <h2>[ 오늘의 레시피 선정 이유 ]</h2>
+                        <p>알리오 올리오를 선정한 이유를 말씀 드리자면,</p>
+                        <div class="space"></div>
+                        <p>알리오 올리오 파스타는 이탈리아 요리 중 가장 간단하면서도 맛있는 요리 중 하나입니다. 이 요리는 대부분의 이탈리아 요리점에서 찾아볼 수 있으며, 집에서도 쉽게 만들
+                            수 있어서 많은 사람들이 즐겨먹는 요리 중 하나입니다.</p>
+                        <p>알리오 올리오 파스타는 올리브 오일과 마늘, 후추, 청양고추 등의 재료로 만들어지는 간단한 소스를 사용합니다. 올리브 오일은 특유의 진한 풍미와 향이 있으며, 마늘과
+                            청양고추는 매콤하고 풍부한 맛을 선사합니다. 이 소스는 파스타와 잘 어울리며, 파스타의 적당한 탄력과 함께 먹으면 입안에서 부드럽고 부드러운 맛을 느낄 수 있습니다.
+                        </p>
+                        <p>또한 알리오 올리오 파스타는 매우 식사를 간편하게 즐길 수 있는 요리입니다. 간단한 재료로 만들어지기 때문에 집에서 쉽게 만들 수 있으며, 빠르게 준비되어 빠른 식사나
+                            간단한 파티에도 좋은 선택입니다.</p>
+                        <p>알리오 올리오 파스타는 건강에도 좋은 요리입니다. 올리브 오일은 풍부한 단일 불포화 지방산과 항산화 물질을 함유하고 있으며, 마늘은 항생 효과와 항산화 물질을 함유하고
+                            있습니다. 또한 파스타는 탄수화물이 풍부하며, 그 중에서도 파스타의 전분은 천연 섬유질로, 소화를 돕는 역할을 합니다.</p>
+                        <p>마지막으로 알리오 올리오 파스타는 다양한 추가재료를 활용하여 다양한 맛을 더할 수 있는 유연한 요리입니다. 새우, 조개, 랍스터 등의 해산물, 베이컨, 버섯, 토마토
+                            등의 다양한 재료를 활용하여 맛과 영양성을 더할 수 있습니다.</p>
+                        <p>따라서 알리오 올리오 파스타는 맛과 건강을 동시에 챙길 수 있는 좋은 선택 중 하나입니다.</p>
+                    </div>
+                </div>
+
+                <div class="main_2">
+                    <h3>재료</h3>
+                    <ul class="list">
+                        <li>올리브유 2/3컵</li>
+                        <li>스파게티면 2인분</li>
+                        <li>통마늘 4~5개</li>
+                        <li>다진마늘 1~2TS</li>
+                        <li>페페론치니 or 베트남고추 3~4개</li>
+                        <li>소금</li>
+                    </ul>
+                </div>
+
+                <div class="main_3">
+                    <div class="steps">
+                        <h3>[ 조리순서 ]</h3>
+                    </div>
+                    <div class="orders">
+                        <div class="order_1">
+                            <ul>
+                                <img src="images/1.png">
+                                <li>1. 빠진 재료가 없는지 확인해주시고 재료는 깨끗하게 씻어주세요.</li>
+                            </ul>
+                            <ul>
+                                <img src="images/4.png">
+                                <li>4. 물이 끓으면 스파게티 면을 넣고 7~8분 정도 익혀주세요.</li>
+                            </ul>
+                            <ul>
+                                <img src="images/7.png">
+                                <li>7. 마늘과 페페론치노를 넣고 충분히 볶아주세요.</li>
+                            </ul>
+                        </div>
+
+                        <div class="order_2">
+                            <ul>
+                                <img src="images/4.png">
+                                <li>2. 물 1리터에 소금 한스푼을 넣고 끓여주세요.</li>
+                            </ul>
+                            <ul>
+                                <img src="images/5.png">
+                                <li>5. 면이 다 익으면 면을 따로 건져내고 면수는 따로 보관해주세요.</li>
+                            </ul>
+                            <ul>
+                                <img src="images/6.png">
+                                <li>8. 면을 넣고 면수를 조금씩 넣어가면서 농도를 맞춰주세요.</li>
+                            </ul>
+                        </div>
+
+                        <div class="order_3">
+                            <ul>
+                                <img src="images/7.png">
+                                <li>3. 마늘과 페페론치노는 슬라이스 해주세요.</li>
+                            </ul>
+                            <ul>
+                                <img src="images/8.png">
+                                <li>6. 팬에 올리브오일 3~4큰술을 둘러주세요.</li>
+                            </ul>
+                            <ul>
+                                <img src="images/9.png">
+                                <li>9. 마지막으로 파슬리가루와 파마산 치즈를 넣고 마무리해주세요.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="floating">
+                <h3>[참고 레시피 링크]</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=2AdgkR4oGQc"><img src="images/백종원 알리오올리오.jpg"></a></li>
+                    <li>백종원 알리오올리오</li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=2Qon_oKky70"><img src="images/베이컨 알리오올리오.jfif"></a>
+                    </li>
+                    <li>베이컨 알리오올리오</li>
+                </ul>
+                <ul>
+                    <li><a
+                            href="https://namu.wiki/w/%EC%95%8C%EB%A6%AC%EC%98%A4%20%EC%97%90%20%EC%98%AC%EB%A6%AC%EC%98%A4"><img
+                                src="images/오리지널.jfif"></a></li>
+                    <li>오리지널 알리오올리오</li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=LilkND6atXU"><img src="images/가장완벽한.jpg"></a></li>
+                    <li>가장 완벽한 알리오올리오</li>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>2020113297 김동완</p>
+        <p>본 레시피는 3월3주차 과제를 위해서 작성되었습니다.</p>
+        <div class="button">
+            <button onclick="increaseWidth()" style='width:150px;height:150px; font-size:30px;'>Increase Width</button>
+            <script>
+                function increaseWidth() {
+                    var page = document.getElementById("page");
+                    var currentWidth = parseInt(page.style.width || 1200);
+                    page.style.width = (currentWidth + 50) + "px";
+                }
+            </script>
+
+            <button onclick="changeColor()" style='width:150px;height:150px; font-size:30px;'>Change Color</button>
+            <script>
+                function changeColor() {
+                    var body = document.body;
+                    var currentColor = body.style.backgroundColor;
+
+                    if (currentColor === "black") {
+                        body.style.backgroundColor = "white";
+                    } else {
+                        body.style.backgroundColor = "black";
+                    }
+                }
+            </script>
+
+            <button onclick="headHeight()" style='width:150px;height:150px; font-size:30px;'>Change Head</button>
+            <script>
+
+                function headHeight() {
+                    if (confirm("헤더를 늘리시겠습니까?")) {
+                        var head = document.getElementById("head");
+                        var currentHeight = parseInt(head.style.height || 100);
+                        head.style.height = (currentHeight + 10) + "px";
+                    }
+                }
+            </script>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
